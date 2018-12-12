@@ -9,7 +9,7 @@ if __name__ == "__main__":
     ax1 = pp.set_ax(fig,label=1) 
     
     ax2 = pp.set_ax(fig,label=2,aspect=(0.4,1))  
-    pp.stack(fig,ax1,ax2,d="l")
+    pp.stack(fig,ax1,ax2,d="r")
     
     ax3 = pp.set_ax(fig,label=3,aspect=(1,0.4))  
     pp.stack(fig,ax1,ax3,d="t")

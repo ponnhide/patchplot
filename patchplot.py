@@ -40,11 +40,11 @@ def stack(fig,ax_base,ax_target,d="b",label_pos="left",am=[0,0],ratio=(1,1)):
     aspect     = ax_target.aspect
     target_pos = ax_target.pos
     
-    if d == "l":
+    if d == "r":
         new_pos = [base_pos[2] + margin,  base_pos[1], aspect[0], aspect[1]]  
     elif d == "b":
         new_pos = [base_pos[0], base_pos[1] - margin - aspect[1], aspect[0], aspect[1]] 
-    elif d == "r":
+    elif d == "l":
         new_pos = [base_pos[2] - margin - aspect[0], base_pos[1], aspect[0], aspect[1]]  
     elif d == "t":
         new_pos = [base_pos[0], base_pos[1] + ax_base.aspect[1] + margin, aspect[0], aspect[1]]  
